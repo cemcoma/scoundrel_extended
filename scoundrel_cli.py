@@ -3,7 +3,7 @@ import time
 
 
 # GLOBAL VARS
-cards_image = {1:"1",2:"2",3:"3",4:"4",5:"5",6:"6",7:"7",8:"8",9:"9",10:"10",11:"J",12:"Q",13:"K",14:"A"}
+cards_image = {2:"2",3:"3",4:"4",5:"5",6:"6",7:"7",8:"8",9:"9",10:"10",11:"J",12:"Q",13:"K",14:"A"}
 suits_image = {"H":"♥️","S":"♠️","D":"♦️","C":"♣️"}
 suits = ["H","S","D","C"]
 
@@ -85,7 +85,7 @@ class dungeon():
                 flag = 1
         self.potion_flag = 0
     
-    def go_to_room(self,player:adventurer, selected_room): #TODO: 3 checks for monster, potion, weapon shiiii   
+    def go_to_room(self,player:adventurer, selected_room):
 
         card = self.cards[selected_room]
 
@@ -134,10 +134,10 @@ def generate_deck() -> list[card]:
     deck = []
     for suit in suits:
         if suit == "H" or suit == "D":
-            for i in range(1,11):
+            for i in range(2,11):
                 deck.append(card(suits_image[suit]+" "+cards_image[i],i,suit))
         else:
-            for i in range(1,15):
+            for i in range(2,15):
                 deck.append(card(suits_image[suit]+" " +cards_image[i],i,suit))
     return deck
 
