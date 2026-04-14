@@ -229,3 +229,25 @@ def scoundrel():
                 player.score +=card.value
 
     return player.score
+
+
+# MAIN
+def main():
+    user_in = 1
+
+    while True:
+        print("Welcome to scoundrel! Press 1 to play a game, press any other key to exit.")
+        user_in = input("-->")
+        if user_in != "1":
+            break
+        score = scoundrel()
+        print(f"Your final score is {score}")
+        time.sleep(10)
+        
+        print("Do you want to save your score to the leaderboards? [y/n]")
+        user_in = input("-->")
+        if user_in != "y":
+            continue
+        #TODO: leaderboards, write name yada yada
+
+main()

@@ -9,3 +9,13 @@ Extended meaning (WIP) =
 2. Weapon types
 3. Extended dungeons (not just 44 cards, infinite mode, and such things!)
 4. Jokers?
+
+
+### CLI version (scoundrel._cli.py)
+Just run python scoundrel_cli.y to play on your favourite command line interpretter.
+
+### RLs
+My implementations for an AI for scoundrel. 
+Uses Q-Learning TD
+
+##
